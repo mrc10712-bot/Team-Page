@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Page</title>
+    <style>
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #dfe0e1;
+        color: #333;
+      }
+
+      .page {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        background: #dde1e3;
+        border: 2px solid #2d5f6f;
+        padding: 18px 26px;
+        margin-bottom: 26px;
+      }
+
+      .nav {
+        display: flex;
+        gap: 28px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #1d3d4a;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+
+      .team {
+        border: 2px solid #2d5f6f;
+        background: #dfe0e1;
+        padding: 20px 28px 24px;
+      }
+
+      .team h1 {
+        margin: 0 0 18px;
+        font-size: 2rem;
+        color: #2d5f6f;
+      }
+
+      .member {
+        overflow: hidden;
+        padding: 18px 0;
+        border-bottom: 1px solid rgba(45, 95, 111, 0.35);
+      }
+
+      .member:last-child {
+        border-bottom: none;
+      }
+
+      .member img {
+        float: left;
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #2d5f6f;
+        margin: 0 22px 8px 0;
+      }
+
+      .member h2 {
+        margin: 0 0 8px;
+        color: #2d5f6f;
+        font-size: 1.5rem;
+      }
+
+      .member p {
+        margin: 0;
+        line-height: 1.55;
+        font-size: 1rem;
+      }
+
+      @media (max-width: 700px) {
+        .member img {
+          float: none;
+          display: block;
+          margin: 0 auto 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#">Home</a>
+          <a href="#">Team</a>
+          <a href="#">Projects</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+      <main class="team">
+        <h1>Our Team</h1>
+
+        <section class="member">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Alex Morgan" />
+          <div>
+            <h2>Alex Morgan</h2>
+            <p>Alex leads product strategy and helps turn ideas into clear, practical plans. He enjoys working closely with teams to make every project easier to build and easier to use.</p>
+          </div>
+        </section>
+
+        <section class="member">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80" alt="Priya Shah" />
+          <div>
+            <h2>Priya Shah</h2>
+            <p>Priya focuses on design systems and user experience, making sure every screen feels simple, polished, and accessible. She loves creating thoughtful interfaces that people can understand quickly.</p>
+          </div>
+        </section>
+
+        <section class="member">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80" alt="Daniel Lee" />
+          <div>
+            <h2>Daniel Lee</h2>
+            <p>Daniel builds reliable front-end experiences and keeps the team moving with clean, maintainable code. He believes good systems are built with attention to detail and a strong focus on performance.</p>
+          </div>
+        </section>
+
+        <section class="member">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=500&q=80" alt="Sofia Patel" />
+          <div>
+            <h2>Sofia Patel</h2>
+            <p>Sofia manages client relationships and helps shape our roadmap around real user needs. She brings together technical insight and strong communication to keep projects aligned and successful.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
